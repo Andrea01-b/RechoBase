@@ -1,0 +1,137 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="icon" type="image/x-icon" href="./imgs/echo.png">
+ <link href="./css/style.css" rel="stylesheet">
+ 
+ <title>ECHO</title>
+</head>
+
+<body>
+<h4>ECHO THE REQUEST PARAMETERS 2</h4>
+<form method="post" action="recho" name="echo">
+<p>
+<fieldset>
+    <legend>Dati Anagrafici</legend>
+    <ol>
+  <li><label for="name">Name </label><br>
+  <input type="text" name="Name" value="" 
+  	placeholder="insert name" maxlength="10" autofocus required/>
+  </li>
+  <br>
+  <li><label for="surname">Surname </label><br>
+  <input type="text" name="Surname" value="" 
+    placeholder="insert surname" required/>
+  </li>
+  <br>
+  <li><p>Select gender:</p>
+
+
+
+<div>
+<input type="radio" id="M" name="gender" value="M"
+checked>
+<label for="M">M</label>
+</div>
+
+
+
+<div>
+<input type="radio" id="F" name="gender" value="F">
+<label for="F">F</label>
+</div>
+
+
+
+<div>
+<input type="radio" id="Other" name="gender" value="Other">
+<label for="Other">Other</label>
+</div>
+</li>
+<br>
+  <li><label for="CF">Codice Fiscale </label><br>
+  <input type="text" name="CF" value="" 
+    placeholder="insert Codice Fiscale" maxlength="16" required/>
+  </li>
+  <br>
+  <li><label for="E-Mail">E-Mail </label><br>
+  <input type="text" name="E-Mail" value="" 
+    placeholder="insert E-Mail" required/>
+  </li>
+  <br>
+  <li><label for="Password">Password </label><br>
+  <input type="password" id="pwd" name="sigret" value="" 
+    placeholder="insert Password" required/>
+  </li>
+  <br>
+</ol>
+</fieldset>
+</p>
+  <p>
+      <fieldset>
+          <legend>Dati Personali</legend>
+      <label for="indirizzo">Indirizzo</label><br>
+      <input type="text" name="Indirizzo" value=""
+      placeholder="Insert Indirizzo" required/>
+      <br>
+      <label for="interno">Interno</label> <br>
+      <input type="number" name="Interno" value=""
+      placeholder="Insert Interno" required/>
+      <br>
+      <label for="cap">CAP</label> <br>
+      <input type="number" name="CAP" value=""
+      placeholder="Insert CAP" maxlength="5" required/>
+      <br>
+      <label for="città">Città</label> <br>
+      <input type="text" name="Città" value=""
+      placeholder="Insert Città" required/>
+      <br>
+      <label for="provincia">Provincia</label><br>
+      <input type="text" name="Provincia" value=""
+      placeholder="Insert Provincia" required/>
+      <br>
+        </fieldset>
+    </p>
+
+    <p>
+        <fieldset>
+            <legend>Dati della carta</legend>
+            <label for="numero carta">Numero Della Carta</label><br>
+            <input type="number" name="Numero Della Carta" value=""
+            placeholder="Insert Numero Carta" maxlength="16" required/>
+            <br>
+
+            <label for="data scadenza">Data scadenza</label> <br>
+            <input type="date" name="Data scadenza" value=""
+            placeholder="Insert Data Scadenza" required/>
+			<br>
+            <label for="codice segreto">Codice Segreto</label> <br>
+            <input type="number" name="Codice Segreto" value=""
+            placeholder="Insert Codice" maxlength="3" required/>
+        </fieldset>
+    </p>
+	<p>
+		Customer comments: <br>
+		<textarea name:"comments" ></textarea>
+	</p>
+
+	
+<label for="list">Bag </label><br>
+
+<input type="checkbox" name="list" value="PC">Computer<br>
+
+<input type="checkbox" name="list" value="PEN">Pen<br>
+
+<input type="checkbox" name="list" value="PHONE">Smartphone<br>
+
+<br>
+	
+
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
